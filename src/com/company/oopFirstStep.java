@@ -5,9 +5,8 @@ package com.company;
  */
 public class oopFirstStep {
     public static void main(String[] args) {
-        Person maks = new Person();
-        maks.height = 180;
-        maks.weight=78.4f;
+        Person maks = new Person(180,75.6f);
+
 
         maks.say("Hi I am Maks");
         System.out.println(maks.height);
@@ -15,6 +14,9 @@ public class oopFirstStep {
         Person oleg = new Person();
         oleg.height = 195;
         oleg.weight= 96.7f;
-        System.out.print(oleg.height);
+        System.out.println(oleg.height);
+
+        Student vova = new Student(170, 74.5f, 5);
+        System.out.println("Hello my name is vova. I'm student on " + vova.course + " course!");
     }
 }
